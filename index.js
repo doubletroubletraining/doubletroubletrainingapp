@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.json("Hello Mane");
+  res.json("Hello Mane Updated");
 });
 
 app.post("/create-payment-intent", async (req, res) => {
@@ -54,10 +54,9 @@ app.post("/nodemail", async (req, res) => {
   const transporter = NodeMailer.createTransport({
     service: "gmail",
     auth: {
-      user: "doubletroubletrainingapp@gmail.com",
-      pass: "rrmtoaxgaiirbxyh",
+      user: "apptestbymzv1@gmail.com",
+      pass: "qfwzaafiwmiqyoup",
     },
-    /* from: "apptestbymzv1@gmail.com" */
   });
 
   let output = `
